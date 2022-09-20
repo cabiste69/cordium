@@ -1,0 +1,78 @@
+<Window xmlns="https://github.com/avaloniaui"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+		x:Class="cordium.Views.LoginWindow"
+		Title="LoginWindow">
+	<!--
+	<Grid >
+
+		<StackPanel  Background="#111111" Width="400" Height="400" Margin="20">
+
+			<Grid Width="20" Height="23" ></Grid>
+			<TextBlock HorizontalAlignment="Center" Margin="5" FontSize="20">Welcome back !</TextBlock>
+
+			<TextBlock HorizontalAlignment="Center" Margin="10" FontSize="10">We're so excited to see you again ! </TextBlock>
+			<Grid Width="20" Height="23" ></Grid>
+			<Grid  Width="270">
+				<TextBlock FontSize="10"  FontWeight="Bold" Margin="5">EMAIL OR PHONE NUMBER</TextBlock>
+			</Grid>
+
+			<TextBox Width="270" Height="10" Margin="4"/>
+
+			<Grid Width="20" Height="23" ></Grid>
+
+			<Grid  Width="270">
+				<TextBlock FontSize="10"  Margin="5" FontWeight="Bold">PASSWORD</TextBlock>
+			</Grid>
+
+			<TextBox PasswordChar="*" Width="270" Height="10" Margin="4" />
+
+			<Grid  Width="270">
+				<TextBlock FontSize="10" Margin="5" FontWeight="Bold" >Forget password ? </TextBlock>
+			</Grid>
+
+			<Button Background="#077094" Foreground="#FFFFFF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Width="270" Height="40" FontWeight="ExtraBold" Margin="20" Content="Login" HorizontalAlignment="Center"></Button>
+
+		</StackPanel>
+
+
+	</Grid>
+	-->
+	
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="4*"/>
+			<ColumnDefinition Width="3*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="3*"/>
+			<RowDefinition Height="4*"/>
+			<RowDefinition Height="3*"/>
+		</Grid.RowDefinitions>
+		
+		<StackPanel Grid.Column="1" Grid.Row="1" Background="White">
+			<Grid ShowGridLines="True" Margin="20">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="auto"/>
+					<ColumnDefinition Width="4*"/>
+					<ColumnDefinition Width="auto"/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="2*"/>
+					<RowDefinition Height="8*"/>
+					<RowDefinition Height="8*"/>
+				</Grid.RowDefinitions>
+				
+			<TextBlock Foreground="Black" FontSize="25" Grid.ColumnSpan="3" TextAlignment="Center">Choose Login Method</TextBlock>
+				
+				<Button Background="Black" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">Token</Button>
+				<Button Background="Black" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">normal login</Button>
+
+				<TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+			</Grid>
+		</StackPanel>
+	</Grid>
+</Window>
