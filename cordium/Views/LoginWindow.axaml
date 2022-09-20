@@ -72,6 +72,7 @@
 				<Button Background="Black" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2">normal login</Button>
 
 				<TextBox Grid.Row="2" Grid.Column="1"></TextBox>
+				<Button Background="Black" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2">confirm</Button>
 			</Grid>
 		</StackPanel>
 	</Grid>
