@@ -83,5 +83,5 @@
 					<TextBox Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"></TextBox>
 				</Grid>
 			</StackPanel>
-	</Grid>
+			</Grid>
 </Window>
